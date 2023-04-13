@@ -5,7 +5,7 @@ message: str = ('Добро пожаловать в самую лучшую пр
 print(message)
 
 
-def calculatesquareroot(number):
+def calculate_square_root(number):
     """Вычисляет квадратный корень."""
     return sqrt(number)
 
@@ -14,8 +14,9 @@ def calc(your_number: float):
     """Проверяет введеное значение."""
     if your_number <= 0:
         return
-    print('Мы вычислили квадратный корень из введённого вами числа. '
-          f'Это будет: {calculatesquareroot(your_number)}')
+    result: float = calculate_square_root(your_number)
+    print(f'Мы вычислили квадратный корень из введённого '
+          f'вами числа. Это будет: {result}')
 
 
 print(message)
